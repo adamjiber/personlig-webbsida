@@ -1,0 +1,93 @@
+body {
+  background-image: url(3d.jpg);
+  background-size: cover;
+  
+}
+
+
+.Adam {
+  text-align: center;
+  margin-top: 20%;
+  color: orange;
+
+}
+
+
+.info {
+  text-align: center;
+  font-family: cursive;
+  font-size: x-large;
+  color: orange;
+  font-weight: bold;
+}
+
+.länkar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 70%;
+  position: relative;
+  font-family: fantasy;
+  font-size: larger;
+}
+
+
+.länkar li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.lista li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: white;
+}
+
+.ansikte {
+  padding: 0;
+  margin: 0;
+  width: 150px;
+  height: 200px;
+  position: absolute;
+  margin-top: 2px;
+  left: 15px;
+  border-radius: 50%;
+  border: dotted;
+  border-color: orange;
+  transition: .3s ease 
+}
+
+.ansikte:hover {
+  transform: scale(1.6);
+  
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 100px; 
+  }
+
+  .ansikte {
+    top: 50px; 
+  }
+
+  .länkar {
+    text-align: center; 
+    position: relative;
+    top: -50px; 
+    right: 0;
+    left: 0;
+  }
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: orange;
+}
+
+a:hover{
+  color: red;
+}
