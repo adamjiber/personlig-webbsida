@@ -6,6 +6,7 @@ body {
 .header {
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
 }
 
 .form {
@@ -15,6 +16,7 @@ body {
   align-items: center;
   padding: 20px;
   
+  
 }
 
 .text-ruta {
@@ -22,6 +24,7 @@ body {
   align-items: center; 
   margin-bottom: 10px;
   font-family: cursive;
+  color: white;
 }
 
 label {
