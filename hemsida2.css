@@ -2,7 +2,7 @@
 body {
   background-image: url(3d.jpg);
   background-size: cover;/* Gör så att bilden täcker hela bakgrunden */
-  
+  background-attachment: fixed;
 }
 
 /* Position samt style av färg för class "Adam" */
@@ -31,6 +31,9 @@ body {
   position: relative;
   font-family: fantasy;
   font-size: larger;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
 }
 
 /* Stil för varje li-element i navigationsmenyn */
@@ -42,6 +45,7 @@ body {
 /* Stil för klassen "lista" */
 .lista li {
   margin-bottom: 10px;/* Marginalet nedåt för elementen */
+  
 }
 
 /* Stil för alla länkar */
@@ -79,11 +83,12 @@ a {
   }
 
   .länkar {
-    text-align: center; /* Centrera texten */
-    position: relative; /* Återgå till relativ positionering */
-    top: -50px; /* Ändra översta position på mina länkarna */
-    right: 0;
-    left: 0;
+    flex-direction: column; /* Visa elementen i en kolumn */
+    align-items: center;
+    display: block;
+  }
+  .länkar li a {
+    white-space: nowrap;
   }
 }
 
