@@ -1,10 +1,11 @@
+/* Bakgrundsbild för hela min sida */
 body {
   background-image: url(3d.jpg);
-  background-size: cover;
+  background-size: cover;/* Gör så att bilden täcker hela bakgrunden */
   
 }
 
-
+/* Position samt style av färg för class "Adam" */
 .Adam {
   text-align: center;
   margin-top: 20%;
@@ -12,7 +13,7 @@ body {
 
 }
 
-
+/* Position, style, typsnitt för informationen om mig */
 .info {
   text-align: center;
   font-family: cursive;
@@ -20,7 +21,7 @@ body {
   color: orange;
   font-weight: bold;
 }
-
+/* Position, style, typsnitt av mina navigationslänkar */
 .länkar {
   list-style: none;
   padding: 0;
@@ -32,62 +33,67 @@ body {
   font-size: larger;
 }
 
-
+/* Stil för varje li-element i navigationsmenyn */
 .länkar li {
-  display: inline;
-  margin-right: 10px;
+  display: inline;/* Sätter list-elementen i en rad */
+  margin-right: 10px;/* Marginalet mellan varje li-element */
 }
 
+/* Stil för klassen "lista" */
 .lista li {
-  margin-bottom: 10px;
+  margin-bottom: 10px;/* Marginalet nedåt för elementen */
 }
 
+/* Stil för alla länkar */
 a {
   color: white;
 }
 
+/* Stil för bilden av mitt ansikte */
 .ansikte {
-  padding: 0;
-  margin: 0;
   width: 150px;
   height: 200px;
-  position: absolute;
-  margin-top: 2px;
+  position: absolute; /* Använd absolut positionering */
+  margin-top: 2px; 
   left: 15px;
-  border-radius: 50%;
-  border: dotted;
+  border-radius: 50%; /* Använd för att göra kanten rund */
+  border: dotted; /* Använd för att göra en "prickig" ram */
   border-color: orange;
-  transition: .3s ease 
+  transition: .3s ease; /* Gör så att bilden får en smidig övergångseffekt när man hovrar över den  */
 }
 
+/* Stilsättning för hovring över bilden på mitt ansikte */
 .ansikte:hover {
-  transform: scale(1.6);
+  transform: scale(1.6);/* Gör bilden 1.6ggr större vid hovring */
   
 }
 
+/* Media query för skärmar med maxbredd 768px */
 @media screen and (max-width: 768px) {
   body {
-    padding: 100px; 
+    padding: 100px; /* Lägg till inre utfyllnad på kroppselementet */
   }
 
   .ansikte {
-    top: 50px; 
+    top: 50px; /* Ändra översta position på bilden av mitt ansikte */
   }
 
   .länkar {
-    text-align: center; 
-    position: relative;
-    top: -50px; 
+    text-align: center; /* Centrera texten */
+    position: relative; /* Återgå till relativ positionering */
+    top: -50px; /* Ändra översta position på mina länkarna */
     right: 0;
     left: 0;
   }
 }
 
-nav ul li a{
-  text-decoration: none;
-  color: orange;
+/* Stil för navigationslänkar inuti listelement i navigationsmenyn */
+nav ul li a {
+  text-decoration: none; /* Ta bort understrykning från länkarna */
+  color: orange; 
 }
 
-a:hover{
-  color: red;
+/* Stil för navigationslänkar vid hovring */
+a:hover {
+  color: red; /* Textfärg ändras till röd när man hovrar */
 }
