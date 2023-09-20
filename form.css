@@ -14,9 +14,12 @@ body {
   gap: 10px;
   justify-content: center; 
   align-items: center;
-  padding: 20px;
-  
-  
+  padding: 20px;  
+}
+
+.kontakt-uppgift {
+  text-align: center;
+  color: white;
 }
 
 .text-ruta {
